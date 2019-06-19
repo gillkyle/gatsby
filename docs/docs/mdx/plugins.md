@@ -9,10 +9,8 @@ title: MDX Plugins
 
 ## Gatsby remark plugins
 
-`gatsby-mdx` is compatible with all of the [gatsby-remark
-plugins](/packages/gatsby-remark-images/?=gatsby-remark),
-including
-[`gatsby-remark-images`](https://next.gatsbyjs.org/packages/gatsby-remark-images/?=gatsby-remark).
+`gatsby-mdx` is compatible with all of the [gatsby-remark plugins](/packages/gatsby-remark-images/?=gatsby-remark),
+including [`gatsby-remark-images`](https://next.gatsbyjs.org/packages/gatsby-remark-images/?=gatsby-remark).
 
 To enable `gatsby-remark-images`, you first need to install the relevant
 image plugins:
@@ -81,6 +79,29 @@ module.exports = {
       options: {
         mdPlugins: [capitalize, emoji],
       },
+    },
+  ],
+}
+```
+
+## Other Gatsby plugins
+
+### MDX with gatsby-plugin-feed
+
+The [`gatsby-plugin-feed`](/packages/gatsby-plugin-feed/) creates RSS feeds for your Gatsby site.
+
+Out of the box, it works with the [`gatsby-transformer-remark`](/packages/gatsby-transformer-remark) plugin. `gatsby-mdx` provides that same out-of-the-box functionality for MDX.
+
+To use the MDX version of the default feed, do the following in your `gatsby-config.js` file.
+
+```javascript:title=gatsby-config.js
+const mdxFeed = require("gatsby-mdx/feed")
+
+module.exports = {
+  plugins: [
+    {
+      resolve: `gatsby-plugin-feed`,
+      options: mdxFeed,
     },
   ],
 }

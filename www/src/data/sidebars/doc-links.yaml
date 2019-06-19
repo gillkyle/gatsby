@@ -225,12 +225,16 @@
               link: /docs/mdx/getting-started/
             - title: Writing Pages
               link: /docs/mdx/writing-pages/
-            - title: Customizing Components
+            - title: Customizing Components and HTML Elements
               link: /docs/mdx/customizing-components/
             - title: Programmatically Creating Pages
               link: /docs/mdx/programmatically-creating-pages/
             - title: Using MDX Plugins
               link: /docs/mdx/plugins/
+            - title: Querying MDX content with GraphQL
+              link: /docs/mdx/querying-mdx-content-via-graphql
+            - title: Creating Interactive Code Blocks
+              link: /docs/mdx/interactive-code-blocks
         - title: Adding Testing
           link: /docs/testing/
           items:
@@ -365,6 +369,8 @@
           link: /docs/browser-apis/
         - title: Gatsby SSR APIs
           link: /docs/ssr-apis/
+        - title: Gatsby MDX APIs
+          link: /docs/gatsby-mdx/
         - title: Actions
           link: /docs/actions/
         - title: Node Model
