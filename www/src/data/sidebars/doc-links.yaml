@@ -371,6 +371,11 @@
           link: /docs/ssr-apis/
         - title: Gatsby MDX APIs
           link: /docs/gatsby-mdx/
+          items:
+            - title: Querying MDX Content via GraphQL
+              link: /docs/mdx/querying-mdx-content-via-graphql/
+            - title: Plugin Options
+              link: /docs/mdx/plugin-options/
         - title: Actions
           link: /docs/actions/
         - title: Node Model
